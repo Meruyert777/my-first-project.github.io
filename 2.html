@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бейонсе Ноулздың ресми сайты</title>
+    <style>
+      @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateY(50px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes bounceIn {
+        0% {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        50% {
+            transform: scale(1.1);
+            opacity: 0.5;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 90%; 
+    }
+    header {
+        font-size: 35px; 
+        padding: 150px 20px;
+    }
+    main {
+        padding: 15px;
+    }
+    nav {
+        flex-wrap: wrap; 
+    }
+    nav a {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+    .layout3 .box img {
+        height: 150px; 
+    }
+    .layout3 .box {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 30px;
+        padding: 100px 15px;
+    }
+    nav {
+        flex-direction: column; 
+        align-items: center;
+    }
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .layout3 {
+        flex-direction: column; 
+    }
+    .layout3 .box {
+        flex: none;
+        margin: 10px 0;
+    }
+    .layout2 {
+        flex-direction: column; 
+    }
+    .layout2 .box {
+        margin-bottom: 20px;
+    }
+    table {
+        font-size: 14px; 
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 80%;
+    }
+    header {
+        font-size: 25px;
+        padding: 80px 10px;
+    }
+    nav a {
+        font-size: 12px;
+    }
+    .layout3 .box img {
+        height: 120px;
+    }
+    .contact-form {
+        padding: 15px;
+    }
+    .contact-form h2 {
+        font-size: 22px;
+    }
+    .contact-form label,
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        width: 100%;
+    }
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+
+
+      
+    }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            
+        animation: fadeIn 2s ease-in-out;
+    background: url('https://s0.rbk.ru/v6_top_pics/media/img/0/24/346939112446240.webp') no-repeat center center fixed;
+    background-size: cover; 
+    color: white;
+    text-align: center;
+    padding: 200px 50px; 
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        }
+        nav a {
+            text-decoration: none;
+            font-size: 18px;
+            color: #512da8;
+            padding: 10px 20px;
+            border: 2px solid transparent;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        animation: slideIn 1.5s ease;
+        }
+        nav a:hover {
+            background: #512da8;
+            color: white;
+        }
+        nav a::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: #512da8;
+        transition: all 0.3s ease;
+    }
+    nav a:hover::before {
+        width: 100%;
+        left: 0;
+    }
+
+        main {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            text-align: center;
+            color: #512da8;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        article, section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .layout1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .layout1 .header, .layout1 .footer {
+            background-color: rgb(80, 120, 116);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+        }
+        .layout1 .article {
+            flex: 3;
+            background-color: #f1f8e9;
+            padding: 10px;
+        }
+        .layout1 .aside, .layout1 .nav {
+            flex: 1;
+            padding: 10px;
+            background-color: #e8f5e9;
+        }
+        .layout2 {
+            background-color: #b1d8e0;
+            padding: 20px;
+            border-radius: 8px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .layout2 .box {
+            flex: 1;
+            padding: 20px;
+            background-color: #d0ecef;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(160, 211, 245, 0.3);
+        }.layout3 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .layout3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .layout3 .box {
+            flex: 1 1 calc(33% - 20px);
+        background-color: #b7e2e5;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(150, 183, 236, 0.2);
+        animation: bounceIn 1.5s ease;
+        animation-fill-mode: forwards;
+        opacity: 0; /* Бастапқыда көрінбейді */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+        .layout3 .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+    .layout3 .box img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.5s ease;
+    }
+    .layout3 .box:hover img {
+        transform: scale(1.1);
+    }
+
+    .layout3 .box h3 {
+        font-size: 20px;
+        color: #512da8;
+        margin-bottom: 10px;
+    }
+    .layout3 .box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, rgba(81, 45, 168, 0) 0%, rgba(81, 45, 168, 1) 50%, rgba(81, 45, 168, 0) 100%);
+        animation: slideLine 2s linear infinite;
+    }
+    .layout3 .box p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .layout3 .box:nth-child(1) {
+        animation-delay: 0.3s;
+    }
+
+    .layout3 .box:nth-child(2) {
+        animation-delay: 0.6s;
+    }
+
+    .layout3 .box:nth-child(3) {
+        animation-delay: 0.9s;
+    }
+    #influence h2 {
+    text-align: center;
+    color: #512da8;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#influence .box {
+    background-color: #dff1f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+    
+        p, ol, li {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+        }
+        th {
+            background-color: #5f5f5f;
+            color: #fff;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .works-container {
+            border: 2px solid #e4c5c5;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        ol.roman-list {
+            list-style-type: upper-roman;
+        }
+        figure {
+            text-align: center;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: nowrap;
+}
+
+.card {
+    animation: fadeIn 1s ease-in-out;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card h3 {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.3;
+}
+
+.card button {
+    margin-top: 8px;
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+form {
+        animation: slideIn 1s ease-in-out;
+    }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+        input[type="submit"] {
+            background: #512da8;
+            color: white;
+        }
+        input[type="reset"] {
+            background: #f44336;
+            color: white;
+        }
+
+        input, textarea {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background: #512da8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #673ab7;
+        }
+        .music-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .music-list li {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        color: #333;
+    }
+        .play-button {
+            width: 50px;
+            height: 50px;
+            border: none;
+            background-color: #512da8;
+            color: white;
+            border-radius: 50%;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;}
+        .play-button.playing {
+        width: 50px;
+        height: 50px;
+        border-radius: 10%;
+        background-color: #ff5722;
+        transform: scale(1.2);
+        animation: none; }
+        .play-button:hover {
+            background-color: #673ab7;
+        }
+    .play-button:active {
+        background-color: #3e288c;
+    }
+    .song-title {
+            margin-left: 15px;
+            font-size: 18px;
+            color: #333;
+        }
+        .output-container {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 15px;
+            background: #e6f7ff;
+            color: #333;
+            font-size: 16px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .output-container::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent #e6f7ff transparent;
+        }
+
+        footer {
+            background: #512da8;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .contact-form {
+        animation: fadeInUp 1s ease-in-out;
+        padding: 20px;
+        border: 2px solid #d1c4e9;
+        border-radius: 10px;
+        background-color: #fafafa;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    .contact-form h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #512da8;
+        text-align: center;
+    }
+
+    .contact-form label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+        opacity: 0;
+        animation: fadeInUp 0.5s ease-in-out forwards;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: fadeInUp 0.8s ease-in-out forwards;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+        border-color: #512da8;
+        outline: none;
+    }
+
+    .contact-form input[type="submit"],
+    .contact-form input[type="reset"] {
+        background: #512da8;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        animation: fadeInUp 1.2s ease-in-out forwards;
+    }
+
+    .contact-form input[type="submit"]:hover {
+        background: #673ab7;
+    }
+
+    .contact-form input[type="reset"]:hover {
+        background: #f44336;
+    }
+
+    .contact-form input[type="reset"] {
+        background: #e57373;
+        margin-left: 10px;
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    .contact-form label:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .contact-form label:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .contact-form input:nth-of-type(1),
+    .contact-form input:nth-of-type(2) {
+        animation-delay: 0.6s;
+    }
+
+    .contact-form textarea {
+        animation-delay: 0.8s;
+    }
+
+    .contact-form input[type="submit"],
+    .contact-form input[type="reset"] {
+        animation-delay: 1.2s;
+    }
+
+        @keyframes slideLine {
+        0% {
+            left: -100%;
+        }
+        50% {
+            left: 50%;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+
+    </style>
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            const firstName = document.getElementById("first-name").value;
+            const lastName = document.getElementById("last-name").value;
+            const email = document.getElementById("email").value;
+            const comment = document.getElementById("comment").value;
+
+            alert(`Аты: ${firstName} ${lastName}\nEmail: ${email}\nХабарлама: ${comment}`);
+        }
+            outputContainer.style.display = "block";
+
+        function resetForm(event) {
+            document.getElementById("contact-form").reset();
+            const outputContainer = document.getElementById("output-container");
+            outputContainer.style.display = "none";
+        }
+        let currentAudio = null;
+        let currentButton = null;
+
+        function playMusic(audioUrl, button) {
+            if (currentAudio && !currentAudio.paused) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                if (currentButton) {
+                    currentButton.classList.remove("playing");
+                    currentButton.textContent = "▶";
+                }
+            }
+
+            if (currentButton !== button || !currentAudio || currentAudio.paused) {
+                currentAudio = new Audio(audioUrl);
+                currentAudio.play();
+                currentButton = button;
+                button.classList.add("playing");
+                button.textContent = "⏸";
+
+                currentAudio.onended = () => {
+                    button.classList.remove("playing");
+                    button.textContent = "▶";
+                };
+            } else {
+
+                currentAudio.pause();
+                button.classList.remove("playing");
+                button.textContent = "▶";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <header>
+        Бейонсе Ноулз
+    </header>
+    <nav>
+        <a href="#">Басты бет</a>
+        <a href="omirbayan.html">Өмірбаяны</a>
+        <a href="enbekteri.html">Еңбектері</a>
+        <a href="video.html">Фотолары мен Видеолары</a>
+    </nav>
+    <main>
+        <div id="layout1">
+            <h2>Өмірбаяны</h2>
+            <div class="layout1">
+                <div class="header">Өмірбаян деректері</div>
+                <div class="article">
+                    <p>Бейонсе Ноулз - америкалық танымал әнші, композитор, актриса және продюсер. Ол әлемдік деңгейде музыкалық индустрияның символына айналған тұлға. Бейонсе өзінің ерекше дауысы мен сахнадағы харизмасы арқылы әлемнің миллиондаған тыңдарманының жүрегін жаулап алды. Оның шығармашылық жолы "Destiny's Child" тобында басталып, кейін жеке мансабында үздік жетістіктерге жетті.</p>
+
+                    <p>Бейонсе өнер саласындағы ең беделді марапаттардың бірі саналатын "Грэмми" сыйлығын 28 мәрте жеңіп алды, бұл оны музыкалық индустриядағы ең беделді тұлғалардың бірі етті. Сонымен қатар, ол 100 миллионнан астам альбом сату арқылы коммерциялық табыстылықтың биік шыңына жетті.</p>
+                      </div>
+                <div class="aside">
+                    <h3>Негізгі жетістіктері</h3>
+                    <ul>
+                        <li>28 мәрте "Грэмми" сыйлығының иегері.</li>
+                        <li>100 миллионнан астам альбом сатқан.</li>
+                        <li>Филантропиялық және қайырымдылық жобаларға белсенді қатысады.</li>
+                    </ul>
+                </div>
+                <div class="footer">Қосымша ақпарат</div>
+            </div>
+        </div>
+
+        <h2>Биография</h2>
+        <table>
+            <tr>
+                <th>Өрісі</th>
+                <th>Мәліметтер</th>
+            </tr>
+            <tr>
+                <td>Толық аты</td>
+                <td>Бейонсе Жизель Ноулз-Картер</td>
+            </tr>
+            <tr>
+                <td>Туған күні</td>
+                <td>1981 жылғы 4 қыркүйек (43 жаста)</td>
+            </tr>
+            <tr>
+                <td>Туған жері</td>
+                <td>Хьюстон, Техас, АҚШ</td>
+            </tr>
+            <tr>
+                <td>Мамандығы</td>
+                <td>Әнші, актриса, продюсер</td>
+            </tr>
+            <tr>
+                <td>Белсенділік жылдары</td>
+                <td>1997 жылдан бері</td>
+            </tr>
+            <tr>
+                <td>Музыкалық жанрлары</td>
+                <td>Поп, R&B, хип-хоп, соул</td>
+            </tr>
+            <tr>
+                <td>Ең танымал жетістіктері</td>
+                <td>28 мәрте "Грэмми" иегері</td>
+            </tr>
+            <tr>
+                <td>Бұрынғы мүшесі</td>
+                <td>"Destiny's Child" тобының мүшесі</td>
+            </tr>
+            <tr>
+                <td>Елі</td>
+                <td>АҚШ</td>
+            </tr>
+        </table>
+
+        <div id="layout3">
+            <h2>Бейонсенің Шығармашылық Іздері</h2>
+            <div class="layout3">
+                <div class="box">
+                    <h3>Хьюстон</h3>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Houston_night.jpg/220px-Houston_night.jpg" alt="Хьюстон">
+                    <p>Хьюстон - Техас штатындағы ең үлкен қалалардың бірі және Бейонсенің туған жері. Бұл қала мұнай өнеркәсібімен және ғарышты зерттеу орталығымен танымал. Хьюстонда өнер мен мәдениет дамыған, көптеген театрлар мен концерттік алаңдар орналасқан.</p>
+                    <p>Бейонсе Хьюстонда өзінің алғашқы әндерін орындап, дарындылығын танытты. Қала оның шығармашылығының бастау алатын жері болып табылады.</p>
+                </div>
+                <div class="box">
+                    <h3>Лос-Анджелес</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2SDywCBVkga8vaS0f4Rf6NyHgj6VHPLTx2w&s" alt="Лос-Анджелес">
+                    <p>Лос-Анджелес - әлемнің кинематография орталығы ретінде танымал қала. Бейонсе шығармашылық жолында осы қалада көптеген жобалар жасап, бейнеклиптерін түсірді. Лос-Анджелес оның музыкасы мен актерлік өнеріне ерекше әсер етті.</p>
+                    <p>Голливуд - Лос-Анджелестің танымал бөлігі, мұнда әлемге әйгілі жұлдыздардың іздері сақталған. Бейонсе де осы қалада өзінің музыкалық жетістіктерін одан әрі дамытты.</p>
+                </div>
+                <div class="box">
+                    <h3>Нью-Йорк</h3>
+                    <img src="https://cdn.tripster.ru/thumbs2/3df6eb14-3a42-11ee-bc4b-aa34287e0de7.1220x600.jpeg" alt="Нью-Йорк">
+                    <p>Нью-Йорк - сән, өнер және мәдениет орталығы. Бұл қалада Бейонсе өзінің бірнеше концерттерін өткізіп, альбомдарын таныстырды. Нью-Йорк оның музыкалық мансабының маңызды кезеңдеріне куә болды.</p>
+                    <p>Бейонсе Нью-Йоркті өзінің концерттері мен қайырымдылық шараларын ұйымдастыру үшін жиі таңдайды. Қала оның шығармашылық және қоғамдық қызметтерінде ерекше орын алады.</p>
+                </div>
+            </div>
+        </div>
+        
+                
+            </div>
+        </div>
+
+
+        <div id="layout2">
+            <h2>Жетістіктері</h2>
+            <div class="layout2">
+                <div class="box">
+                    <h3>28 "Грэмми" жеңісі</h3>
+                    <p>Бейонсе 28 рет "Грэмми" жеңіп алған, бұл рекордтық көрсеткіш.</p>
+                </div>
+                <div class="box">
+                    <h3>Феминизм символы</h3>
+                    <p>Ол әйелдер құқығын дәріптеудің белсенді өкілі.</p>
+                </div>
+                <div class="box">
+                    <h3>Әлемдік турлар</h3>
+                    <p>Жер шарын қамтыған 7 концерттік тур өткізген.</p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <section id="works">
+                <h2>Еңбектері</h2>
+                <ul>
+                    <li><strong>"Dangerously in Love" (2003):</strong> Бұл альбом оның жеке мансабындағы үлкен жетістікке жетті. "Crazy in Love" хиті оған халықаралық танымалдылық әкелді.</li>
+                    <li><strong>"Beyoncé" (2013):</strong> Альбом музыкалық индустрияда жаңа стандарт орнатты, визуалды альбом ретінде шығарылды.</li>
+                    <li><strong>"Lemonade" (2016):</strong> Бұл альбом әйелдер құқығы, нәсілшілдік және жеке қарым-қатынастар тақырыбын көтерді.</li>
+                    <li><strong>"Renaissance" (2022):</strong> Бұл альбом музыкалық сыншылардан жоғары баға алды.</li>
+                </ul>
+            </section>
+    
+            <section id="music">
+                <h2>Музыкасы</h2>
+<p>Оның шығармашылық жұмыстары музыкалық стильдерді жаңаша үйлестіріп, поп, R&B, хип-хоп және соул жанрларын заманауи деңгейге көтерді. Бейонсе әлеуметтік мәселелерге ерекше назар аударып, әйелдер құқығы, нәсілдік теңдік және қайырымдылық жобаларына белсенді қатысады. Оның "Lemonade" және "Renaissance" альбомдары осы тақырыптарды тереңірек қозғайды.</p>
+<div>
+    <h3>Танымал әндері</h3>
+    <ol class="music-list">
+        <li>
+            <button class="play-button" onclick="playMusic('audio/crazy-in-love.mp3', this)">▶</button>
+            <span class="song-title">Crazy in Love</span>
+        </li>
+        <li>
+            <button class="play-button" onclick="playMusic('audio/halo.mp3', this)">▶</button>
+            <span class="song-title">Halo</span>
+        </li>
+        <li>
+            <button class="play-button" onclick="playMusic('audio/single-ladies.mp3', this)">▶</button>
+            <span class="song-title">Single Ladies (Put a Ring on It)</span>
+        </li>
+        <li>
+            <button class="play-button" onclick="playMusic('audio/run-the-world.mp3', this)">▶</button>
+            <span class="song-title">Run the World (Girls)</span>
+        </li>
+        <li>
+            <button class="play-button" onclick="playMusic('audio/formation.mp3', this)">▶</button>
+            <span class="song-title">Formation</span>
+        </li>
+        <li>
+            <button class="play-button" onclick="playMusic('audio/love-on-top.mp3', this)">▶</button>
+            <span class="song-title">Love on Top</span>
+        </li>
+    </ol>
+    
+                </div>
+            </section>
+            <section id="influence">
+                <h2>Бейонсенің Әсері</h2>
+                <div class="layout3">
+                    <div class="box">
+                        <h3>Музыкалық Инновация</h3>
+                        <p>Бейонсе поп және R&B жанрларына жаңа стильдер енгізіп, музыкалық индустрияда жаңашылдықтың символына айналды. Оның альбомдары мен әндері көптеген жас орындаушыларға шабыт берді.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Әлеуметтік Әділеттілік</h3>
+                        <p>Бейонсе нәсілдік теңдік, әйелдер құқығы және қайырымдылық жобаларын белсенді түрде қолдап, қоғамға үлкен әсер етті. Ол әрдайым өз өнерін әлеуметтік өзгерістерді қолдау үшін пайдаланады.</p>
+                    </div>
+                    <div class="box">
+                        <h3>Мәдени Икон</h3>
+                        <p>Бейонсе сән, кино және мәдениет салаларында да танымал. Оның стильдік таңдау мен кино саласындағы рөлдері оның шығармашылығын көпқырлы етеді.</p>
+                    </div>
+                </div>
+            </section>
+            
+            
+    
+            <h2>Бейонсенің Әріптестері</h2>
+<div class="card-container">
+    <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWYP8rtUFxHV_SR7ipJO8FxZImnfAPsUJ8OQ&s" alt="Jay-Z">
+        <div class="card-content">
+            <h3>Jay-Z</h3>
+            <p>Бейонсенің жұбайы және әріптесі. Ол әлемдегі ең танымал рэперлердің бірі және бірнеше "Грэмми" иегері. Jay-Z мен Бейонсе бірлесіп "Drunk in Love" және "Crazy in Love" сияқты хит әндерді шығарды.</p>
+            <a href="https://en.wikipedia.org/wiki/Jay-Z" target="_blank">
+                <button>Read More</button>
+            </a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/vegas-magazine-celebrates-their-9th-anniversary-with-kelly-rowland-at-boulevard-pool-at-the-cosmopolitan.jpg?crop=1xw:1.0xh;center,top&resize=640:*" alt="Kelly Rowland">
+        <div class="card-content">
+            <h3>Kelly Rowland</h3>
+            <p>"Destiny's Child" тобының мүшесі, Бейонсенің жақын досы және әріптесі. Kelly жеке мансабында да танымал әнші.</p>
+            <a href="https://en.wikipedia.org/wiki/Kelly_Rowland" target="_blank">
+                <button>Read More</button>
+            </a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Solange_Knowles%2C_Bonnaroo_Music_and_Arts_Festival_2019_%28cropped%29.jpg/640px-Solange_Knowles%2C_Bonnaroo_Music_and_Arts_Festival_2019_%28cropped%29.jpg" alt="Solange Knowles">
+        <div class="card-content">
+            <h3>Solange Knowles</h3>
+            <p>Бейонсенің қарындасы, әнші және композитор. Solange өзінің ерекше стилімен және шығармашылығымен танымал. Ол бірнеше альбом шығарды және өнердің әртүрлі салаларында белсенді.</p>
+            <a href="https://en.wikipedia.org/wiki/Solange_Knowles" target="_blank">
+                <button>Read More</button>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+        </main>
+
+        <section class="contact-form">
+            <h2>Байланыс</h2>
+            <form id="contact-form" onsubmit="submitForm(event);">
+                <label for="first-name">Атыңыз:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Тегіңіз:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="comment">Хабарлама:</label>
+                <textarea id="comment" name="comment" rows="4"></textarea>
+                
+                <label>
+                    <input type="checkbox" id="agreement" name="agreement" checked> Пайдаланушы келісімін қабылдаймын
+                </label>
+
+                <input type="submit" value="Жіберу">
+                <input type="reset" value="Қалпына келтіру" onclick="resetForm(event);">
+            </form>
+            <div id="output-container" class="output-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Бейонсе Ноулздың ресми сайты</p>
+        <p>Барлық құқықтар қорғалған.</p>
+        <p>Сайт туралы пікірлеріңізді бізге жіберіңіз.</p>
+    </footer>
+</body>
+</html>

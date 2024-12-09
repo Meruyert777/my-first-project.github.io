@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бейонсе Ноулздың ресми сайтына кіру</title>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-5px);
+            }
+            50% {
+                transform: translateX(5px);
+            }
+            75% {
+                transform: translateX(-5px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: url('https://www.usatoday.com/gcdn/authoring/authoring-images/2024/03/29/USAT/73143162007-gty-1503043534.jpg?crop=2666,1500,x0,y0&width=660&height=371&format=pjpg&auto=webp') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .login-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 1s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .login-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            animation: bounce 1.5s infinite ease-in-out;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            animation: fadeIn 1s ease;
+        }
+
+        input[type="email"]:focus, input[type="password"]:focus {
+            border-color: #4CAF50;
+            box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            animation: fadeIn 1.5s ease 0.5s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            display: none;
+            animation: shake 0.5s ease;
+        }
+    </style>
+    <script>
+        function login(event) {
+            event.preventDefault(); 
+
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("error-message");
+
+            const correctEmail = "Meruyert@example.com";
+            const correctPassword = "Mer123";
+
+            if (email === correctEmail && password === correctPassword) {
+                window.location.href = "2.html"; 
+            } else {
+                errorMessage.textContent = "Қате email немесе пароль. Қайтадан енгізіңіз.";
+                errorMessage.style.display = "block";
+                errorMessage.style.animation = "shake 0.5s ease";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Сайтқа кіру</h1>
+        <form onsubmit="login(event);">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Кіру">
+            <div id="error-message" class="error-message"></div>
+        </form>
+    </div>
+</body>
+</html>

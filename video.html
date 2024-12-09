@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бейонсенің Фотолары мен Видеолары</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes scaleUp {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #f3e5f5, #ede7f6);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            background-color: #4a148c;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-transform: uppercase;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 1.5px;
+        }
+
+        main {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+            animation: scaleUp 1s ease;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #4a148c;
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        figure {
+            margin: 20px 0;
+            text-align: center;
+            animation: fadeIn 1s ease;
+        }
+
+        img, video {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+        }
+
+        figcaption {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        a {
+            text-decoration: none;
+            color: #4a148c;
+            font-weight: bold;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a:hover {
+            color: #6a1b9a;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #4a148c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            margin-top: auto;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1.5s ease;
+        }
+
+        footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Бейонсенің Фотолары мен Видеолары</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Фотолары</h2>
+            <figure>
+                <img src="https://s0.rbk.ru/v6_top_pics/media/img/9/01/346939098049019.webp" alt="Бейонсе Ноулз">
+                <figcaption>Бейонсенің концерттегі фотосы</figcaption>
+            </figure>
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlu_VpZzBK2DRcH1VYen2_xm_q1kUKEfCcw&s" alt="Бейонсе Ноулз">
+                <figcaption>Бейонсенің жеке фотосы</figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Видеолары</h2>
+            <figure>
+                <a href="https://youtu.be/WDZJPJV__bQ" target="_blank">"Halo" әніне арналған бейнеклип</a>
+                <figcaption>Бейонсенің "Halo" әніне бейнеклипі</figcaption>
+            </figure>
+            <figure>
+                <a href="https://youtu.be/ViwtNLUqkMY" target="_blank">"Single Ladies" клипі</a>
+                <figcaption>Бейонсенің "Single Ladies" бейнеклипі</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Бейонсенің ресми сайты</p>
+        <p>Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>
